@@ -1,0 +1,27 @@
+{
+  "name": "abraham-sam-blog-api",
+  "version": "1.0.0",
+  "description": "blog api development challenge",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thinkful-ei17/abraham-sam-blog-api.git"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "abraham and sam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thinkful-ei17/abraham-sam-blog-api/issues"
+  },
+  "homepage": "https://github.com/thinkful-ei17/abraham-sam-blog-api#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "uuid": "^3.1.0"
+  }
+}
