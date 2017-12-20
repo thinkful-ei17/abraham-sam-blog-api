@@ -30,6 +30,10 @@ router.post('/', jsonParser, (req, res) => {
 });
 
 router.delete('/:id', (req, res) => {
+  if (BlogPosts.get(req.params.id) === undefined){
+    const message = `Blog with id ${req.params.id} not found. Nothing to delete`;
+    res.status(400).send(message);
+  }
   console.log(`Deleted post with id ${req.params.id}`);
   BlogPosts.delete(req.params.id);
   res.status(204).end();
